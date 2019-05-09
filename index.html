@@ -1,135 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>TexelBox</title>
-        
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>TexelBox - GameDev, Programming, Graphics, more...</title>
+
+        <meta name="description" content="Personal Website - GameDev, Programming, Graphics, more..." />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Aaron Hornby" />
+
         <!-- source: https://realfavicongenerator.net/ -->
-        <!-- I put a 512x512 png export into the generator and got this... -->
-        <!-- NOTE: I used mostly default settings so I might be missing come compatibility things -->
-        <!-- NOTE: I removed the first '/' from the paths, it fixed the icon not showing up in chrome -->
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/exports/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/exports/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/exports/favicon-16x16.png">
-        <link rel="manifest" href="assets/images/exports/site.webmanifest">
-        <link rel="mask-icon" href="assets/images/exports/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="assets/images/exports/favicon.ico">
+        <!--- NOTE: I generated the favicons by using the basic-logo-optimized.svg -->
+        <!--- NOTE: I think I have to place this in the head of every page -->
+        <!--- NOTE: I needed to removed the leading '/' from the hrefs (index.html, browserconfig.xml) for chrome to render favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=69Pl5Xkg0Q">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=69Pl5Xkg0Q">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=69Pl5Xkg0Q">
+        <link rel="manifest" href="site.webmanifest?v=69Pl5Xkg0Q">
+        <link rel="mask-icon" href="safari-pinned-tab.svg?v=69Pl5Xkg0Q" color="#2b5797">
+        <link rel="shortcut icon" href="favicon.ico?v=69Pl5Xkg0Q">
+        <meta name="apple-mobile-web-app-title" content="texelbox.com">
+        <meta name="application-name" content="texelbox.com">
         <meta name="msapplication-TileColor" content="#2b5797">
-        <meta name="msapplication-config" content="assets/images/exports/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
 
-        <!--style>
-            .texels rect {
-                animation: texels 1s infinite alternate-reverse;
+        <style type="text/css">
+            #main-header {
+                text-align:center;
+                background-color:rgb(17, 29, 29);
+                color:white;
+                padding:10px;
             }
 
-            @keyframes texels {
-                from {
-                    height: 9.3361px;
-                    width: 9.3361px;
-                }
-                to {
-                    height: 3px;
-                    width: 3px;
-                }
+            #main-footer {
+                text-align:center;
+                background-color:rgb(17, 29, 29);
+                color:white;
+                font-size:18px;
+                padding:5px;
+            }
+        
+        </style>
+
+        <style type="text/css">
+            #logo {
+                animation: rainbow 10s alternate ease-in-out infinite;
             }
 
-            .texels rect:nth-child(1) {animation-delay: 0.2s}
-            .texels rect:nth-child(2) {animation-delay: 0.4s}
-            .texels rect:nth-child(3) {animation-delay: 0.6s}
-            .texels rect:nth-child(4) {animation-delay: 0.8s}
-            .texels rect:nth-child(5) {animation-delay: 1.0s}
-            .texels rect:nth-child(6) {animation-delay: 1.2s}
-            .texels rect:nth-child(7) {animation-delay: 1.4s}
-            .texels rect:nth-child(8) {animation-delay: 1.6s}
-            .texels rect:nth-child(9) {animation-delay: 1.8s}
-        </style-->
+            @keyframes rainbow {
+                0%{stroke:red}
+                17%{stroke:orange}
+                34%{stroke:yellow}
+                51%{stroke:green}
+                68%{stroke:blue}
+                85%{stroke:indigo}
+                100%{stroke:violet}
+            }
+
+        </style>
+
 
     </head>
     <body>
-        <div>
-            <img src="assets/images/exports/new-logo-optimized.svg" alt="logo"/>
-
-
+        <header id="main-header">
+            <h1>TEXELBOX</h1>
+        
             <!-- Created with Inkscape (http://www.inkscape.org/) -->
-            <!--svg width="512.01" height="310.85" version="1.1" viewBox="0 0 135.47 82.243" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <defs>
-                <radialGradient id="radialGradient2166" cx="-165.82" cy="298.05" r="2.2524" gradientTransform="matrix(2.1451 0 0 2.1451 131.87 -753.61)" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#edfcd3" offset="0"/>
-                <stop stop-color="#aaef32" offset="1"/>
-                </radialGradient>
-                <radialGradient id="radialGradient2160" cx="-180.75" cy="293.14" r="2.2524" gradientTransform="matrix(2.1451 0 0 2.1451 131.87 -753.61)" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#fff" offset="0"/>
-                <stop stop-color="#41f2e6" offset="1"/>
-                </radialGradient>
-                <radialGradient id="radialGradient2162" cx="-177.54" cy="295.21" r="2.2524" gradientTransform="matrix(2.1451 0 0 2.1451 131.87 -753.61)" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#fff" offset="0"/>
-                <stop stop-color="#ed3b98" offset="1"/>
-                </radialGradient>
-                <radialGradient id="radialGradient2158" cx="-173.19" cy="302.02" r="2.2524" gradientTransform="matrix(2.1451 0 0 2.1451 131.87 -753.61)" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#fff" offset="0"/>
-                <stop stop-color="#c11ec4" stop-opacity=".84951" offset="1"/>
-                </radialGradient>
-                <radialGradient id="radialGradient2164" cx="-171.77" cy="295.12" r="2.2524" gradientTransform="matrix(2.1451 0 0 2.1451 131.87 -753.61)" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#fff" offset="0"/>
-                <stop stop-color="#f05146" offset="1"/>
-                </radialGradient>
-                <radialGradient id="radialGradient2156" cx="-170.55" cy="308.82" r="2.2524" gradientTransform="matrix(2.1451 0 0 2.1451 131.87 -753.61)" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#fff" offset="0"/>
-                <stop stop-color="#d5b748" offset="1"/>
-                </radialGradient>
-                <radialGradient id="radialGradient2168" cx="-183.77" cy="300.51" r="2.2524" gradientTransform="matrix(2.1451 0 0 2.1451 131.87 -753.61)" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#fff" offset="0"/>
-                <stop stop-color="#4cd0b5" offset="1"/>
-                </radialGradient>
-                <radialGradient id="radialGradient2170" cx="-180.47" cy="309.67" r="2.2524" gradientTransform="matrix(2.1451 0 0 2.1451 131.87 -753.61)" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#f7fbfb" offset="0"/>
-                <stop stop-color="#4c9c9f" offset="1"/>
-                </radialGradient>
-                <radialGradient id="radialGradient2172" cx="-191.33" cy="299.94" r="2.2524" gradientTransform="matrix(2.1451 0 0 2.1451 131.87 -753.61)" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#fff" offset="0"/>
-                <stop stop-color="#784c9f" offset="1"/>
-                </radialGradient>
-                </defs>
+            <svg width="512" height="512" version="1.1" viewBox="0 0 135.47 135.47" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                 <metadata>
-                <rdf:RDF>
-                <cc:Work rdf:about="">
-                <dc:format>image/svg+xml</dc:format>
-                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-                <dc:title/>
-                </cc:Work>
-                </rdf:RDF>
+                    <rdf:RDF>
+                        <cc:Work rdf:about="">
+                            <dc:format>image/svg+xml</dc:format>
+                            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                            <dc:title/>
+                        </cc:Work>
+                    </rdf:RDF>
                 </metadata>
-                <g transform="translate(4.4625e-6 -214.76)">
-                <g transform="translate(313.15 171.12)">
-                <path d="m-252.23 111.91 49.183-4.9893-40.099-28.914z" fill="#434f64"/>
-                <path d="m-252.23 111.91 9.0842-33.903-49.183 4.9906z" fill="#29303d"/>
-                <path d="m-242.2 119.14-10.025-7.2282 12.296-1.2475 10.025 7.2282zm12.296-1.2475-10.025-7.2282 12.296-1.2475 10.025 7.2282zm12.296-1.2475-10.025-7.2282 12.296-1.2475 10.025 7.2282zm12.296-1.2475-10.025-7.2282 12.296-1.2475 10.025 7.2282z" fill="#bca287"/>
-                <path d="m-203.04 106.92 10.025 7.2282-49.183 4.99-10.025-7.2284" fill="none" stroke="#000" stroke-width=".56753"/>
-                <path d="m-294.6 91.475-10.025-7.2282 12.296-1.2475 10.025 7.2282zm10.025 7.2282-10.025-7.2282 12.296-1.2475 10.025 7.2282zm10.025 7.2282-10.025-7.2282 12.296-1.2475 10.025 7.2282zm10.025 7.2282-10.025-7.2282 12.296-1.2475 10.025 7.2282z" fill="#c8b39d"/>
-                <path d="m-252.23 111.91-12.296 1.2475-40.099-28.913 12.296-1.247" fill="none" stroke="#000" stroke-width=".56753"/>
-                <g class="texels" stroke="#000" stroke-width=".32728">
-                <rect transform="rotate(-45)" x="-228.5" y="-118.93" width="9.3361" height="9.3361" fill="url(#radialGradient2166)"/>
-                <rect transform="rotate(-45)" x="-260.53" y="-129.47" width="9.3361" height="9.3361" fill="url(#radialGradient2160)"/>
-                <rect transform="rotate(-45)" x="-253.64" y="-125.01" width="9.3361" height="9.3361" fill="url(#radialGradient2162)"/>
-                <rect transform="rotate(-45)" x="-244.31" y="-110.42" width="9.3361" height="9.3361" fill="url(#radialGradient2158)"/>
-                <rect transform="rotate(-45)" x="-241.27" y="-125.21" width="9.3361" height="9.3361" fill="url(#radialGradient2164)"/>
-                <rect transform="rotate(-45)" x="-238.64" y="-95.821" width="9.3361" height="9.3361" fill="url(#radialGradient2156)"/>
-                <rect transform="rotate(-45)" x="-267.01" y="-113.66" width="9.3361" height="9.3361" fill="url(#radialGradient2168)"/>
-                <rect transform="rotate(-45)" x="-259.92" y="-93.997" width="9.3361" height="9.3361" fill="url(#radialGradient2170)"/>
-                <rect transform="rotate(-45)" x="-283.23" y="-114.88" width="9.3361" height="9.3361" fill="url(#radialGradient2172)"/>
+                <g transform="translate(0 -161.53)">
+                    <rect y="161.53" width="135.47" height="135.47" fill-opacity="0"/>
+                    <path id="logo" d="m91.694 281.07-13.879-51.799-13.88-51.8 51.8 13.879-37.92 37.92 51.799 13.88zm-65.68-65.679 51.801 13.88m-37.922 37.92-13.88-51.8-20.081-5.3813" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="11.704"/>
                 </g>
-                <path d="m-238.6 61.057 4.5423-16.952-24.592 2.4952zm-4.5422 16.952 4.5422-16.952-24.592 2.4952zm-44.64-11.961 24.591-2.4955-20.048-14.456zm24.591-2.4951-20.049-14.456 24.591-2.495 20.049 14.456z" fill="#c8b39d"/>
-                <path d="m-234.06 44.106-49.183 4.9905-4.5421 16.951" fill="none" stroke="#000" stroke-width=".56753"/>
-                <path d="m-238.6 61.058 24.591-2.4955-20.048-14.456zm-4.5423 16.952 24.591-2.4955-20.048-14.457zm44.641 11.961 4.5423-16.952-24.592 2.4952zm-20.049-14.457-20.049-14.456 24.591-2.495 20.049 14.456z" fill="#bca287"/>
-                <path d="m-198.5 89.97 4.5422-16.951-40.099-28.914-9.0843 33.904" fill="none" stroke="#000" stroke-width=".56753"/>
-                <path d="m-203.04 106.92-20.049-14.456 24.591-2.495 20.049 14.456zm-20.049-14.456-20.049-14.456 24.591-2.495 20.049 14.456z" fill="#bca287"/>
-                <path d="m-243.14 78.01 24.592-2.4955 40.099 28.913-24.591 2.4956" fill="none" stroke="#000" stroke-width=".56753"/>
-                <path d="m-267.73 80.504-20.049-14.456 24.591-2.495 20.049 14.456zm-24.591 2.495-20.049-14.456 24.591-2.495 20.049 14.456z" fill="#c8b39d"/>
-                <path d="m-292.33 83-20.05-14.457 49.183-4.9904 20.05 14.457" fill="none" stroke="#000" stroke-width=".56753"/>
-                </g>
-                </g>
-            </svg-->
+            </svg>
+        </header>
+
+        <div>
+            TESTING SOME STUFF (BELOW)
         </div>
+        
+        <section>
+            <article class="post">
+                <h3>Blog Post 1</h3>
+                <small>date stamp</small>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nihil nam in quisquam, dolor voluptate laborum vero excepturi est assumenda aut tempora eligendi officiis pariatur quis, voluptas fugiat incidunt porro!</p>
+                <a href="#">Read More</a>
+            </article>
+            <article class="post">
+                    <h3>Blog Post 2</h3>
+                    <small>date stamp</small>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nihil nam in quisquam, dolor voluptate laborum vero excepturi est assumenda aut tempora eligendi officiis pariatur quis, voluptas fugiat incidunt porro!</p>
+                    <a href="#">Read More</a>
+            </article>
+            <article class="post">
+                <h3>Blog Post 3</h3>
+                <small>date stamp</small>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nihil nam in quisquam, dolor voluptate laborum vero excepturi est assumenda aut tempora eligendi officiis pariatur quis, voluptas fugiat incidunt porro!</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Categories</h3>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Category1</a>
+                        <a href="#">Category2</a>
+                        <a href="#">Category3</a>
+                    </li>
+                    <li>
+                        <a href="#">Category4</a>
+                        <a href="#">Category5</a>
+                        <a href="#">Category6</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <p>
+            <strong>Lorem ipsum dolor</strong> <em>sit amet consectetur adipisicing elit. Excepturi dolor obcaecati, libero voluptate maxime aliquid illum vel cupiditate, quod nemo aut dolorem et quas omnis odit aspernatur officia deleniti harum!</em>
+        </p>
+        <p>
+            <a href="https://www.google.com/" target="_blank">GOOGLE</a>
+        </p>
+
+        <ul>
+            <li>ITEM1</li>
+            <li>ITEM2</li>
+            <li>ITEM3</li>
+            <li>ITEM4</li>
+        </ul>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>COURSE</th>
+                    <th>TOPIC</th>
+                    <th>GRADE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TEST 101</td>
+                    <td>something about sharks</td>
+                    <td>A+</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- just add some extra space to bottom -->
+        <div style="margin-top:500px"></div>
+
+        <footer id="main-footer">
+            <p>Copyright &copy; 2019, Aaron Hornby</p>
+        </footer>
     </body>
 </html>
