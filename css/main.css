@@ -1,0 +1,148 @@
+/* main.css */
+/* applies globally to all pages */
+
+/*
+* {
+    margin:0;
+    padding:0;
+}
+*/
+
+a {
+    /*text-decoration: none;*/
+    color:salmon;
+}
+
+a:hover {
+    color:red;
+}
+
+a:active {
+    color:green;
+}
+
+
+body {
+    background-color:#232c33;
+    color:#dadff7;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:16px;
+    line-height:1.6em;
+    margin:0;
+}
+
+.container {
+    width:80%;
+    margin:auto;
+    overflow:hidden; 
+}
+
+
+#logo {
+    /*animation: rainbow 10s alternate ease-in-out infinite;*/
+    animation: two-tone 5s alternate ease-in-out infinite;
+}
+
+/*
+@keyframes rainbow {
+    0%{stroke:red}
+    17%{stroke:orange}
+    34%{stroke:yellow}
+    51%{stroke:green}
+    68%{stroke:blue}
+    85%{stroke:indigo}
+    100%{stroke:violet}
+}
+*/
+
+@keyframes two-tone {
+    from { stroke:#232c33; }
+    to { stroke:#dadff7; }
+}
+
+#main-footer {
+    text-align:center;
+    background-color:#dadff7;
+    color:#232c33;
+    /*font-size:18px;*/
+    padding:20px;
+    margin-top:40px;
+}
+
+#main-header {
+    text-align:center;
+    background-color:#dadff7;
+    color:#232c33;
+}
+
+
+#navbar {
+    background-color:#333;
+    color:#fff;
+}
+
+#navbar ul {
+    padding:0;
+    list-style: none; /* removes bullet points*/
+}
+
+#navbar li {
+    display:inline; /* places links horizontally */
+}
+
+#navbar a {
+    color:#fff;
+    text-decoration: none;
+    font-size:18px;
+    padding-right:15px;
+}
+
+#showcase {
+    /*
+    background-image:url('../images/showcase.jpg');
+    background-position:center right;
+    */
+    /*height:300px;*/
+    min-height:300px; /* use this instead so that the text doesnt overflow into below elements on window shrink */
+    margin-bottom:30px;
+    text-align:center;
+}
+
+#showcase h1 {
+    color:#fff;
+    font-size:50px;
+    line-height:1.6em;
+    padding-top:30px;
+}
+
+#main {
+    float:left;
+    width:70%;
+    padding:0 30px;
+    box-sizing:border-box; /* takes into account the extra padding, border, margin? into the width */
+}
+
+#sidebar {
+    float:right;
+    width:30%;
+    background:#333;
+    color:#fff;
+    padding:10px;
+    box-sizing:border-box; /* takes into account the extra padding, border, margin? into the width */
+}
+
+
+
+@media(max-width:600px) { /* media query to make the elements more responsive, they will pop down if window gets too small */
+    /* makes it so these styles will only be effective if under 600px */
+    #main {
+        width:100%;
+        float:none;
+    }
+
+    #sidebar {
+        width:100%;
+        float:none;
+    }
+
+}
