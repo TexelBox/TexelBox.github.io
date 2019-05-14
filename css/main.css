@@ -40,10 +40,11 @@ body {
 }
 
 
-#logo {
+/*#logo {*/
     /*animation: rainbow 10s alternate ease-in-out infinite;*/
-    animation: two-tone 5s alternate ease-in-out infinite;
+    /*animation: two-tone 5s alternate ease-in-out infinite;
 }
+*/
 
 /*
 @keyframes rainbow {
@@ -57,10 +58,12 @@ body {
 }
 */
 
+/*
 @keyframes two-tone {
     from { stroke:#232c33; }
     to { stroke:#dadff7; }
 }
+*/
 
 #main-footer {
     text-align:center;
@@ -77,6 +80,16 @@ body {
     color:#232c33;
 }
 
+#main-header .container img {
+    float:left;
+    width:10%;
+    height:64px;
+}
+
+#main-header .container h1 {
+    float:right;
+    width:90%;
+}
 
 #navbar {
     background-color:#333;
@@ -135,9 +148,9 @@ body {
 #sidebar, .tools {
     float:right;
     width:30%;
+    padding:10px;
     background:#333;
     color:#fff;
-    /*padding:10px;*/
     box-sizing:border-box; /* takes into account the extra padding, border, margin? into the width */
 }
 
