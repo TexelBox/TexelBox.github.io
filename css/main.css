@@ -1,148 +1,144 @@
 /* main.css */
 /* applies globally to all pages */
 
-
 body {
-    background-color:#222629;
-    color:#acbd95;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:16px;
-    line-height:1.6em;
-    margin:0;
+  background-color:#222629;
+  color:#acbd95;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:16px;
+  line-height:1.6em;
+  margin:0;
 }
 
 a {
-    color:ghostwhite;
+  color:ghostwhite;
 }
 
 a:hover {
-    color:darksalmon;
+  color:darksalmon;
 }
 
 .container {
-    width:80%;
-    margin:auto;
-    overflow:hidden; 
+  width:80%;
+  margin:auto;
+  overflow:hidden;
 }
 
 #main-footer {
-    text-align:center;
-    background-color:#acbd95;
-    color:#000;
-    /*font-size:18px;*/
-    padding:20px;
-    margin-top:100px;
+  text-align:center;
+  background-color:#acbd95;
+  color:#000;
+  /*font-size:18px;*/
+  padding:20px;
+  margin-top:100px;
 }
 
 #main-header {
-    text-align:center;
-    background-color:#acbd95;
-    color:#000;
+  text-align:center;
+  background-color:#acbd95;
+  color:#000;
 }
 
 #main-header .container img {
-    float:left;
-    width:10%;
-    height:64px;
+  float:left;
+  width:10%;
+  height:64px;
 }
 
 #main-header .container h1 {
-    float:right;
-    width:90%;
+  float:right;
+  width:90%;
 }
 
 #navbar {
-    background-color:#333;
-    color:#acbd95;
+  background-color:#333;
+  color:#acbd95;
 }
 
 #navbar ul {
-    padding:0;
-    list-style: none; /* removes bullet points*/
+  padding:0;
+  list-style: none; /* removes bullet points*/
 }
 
 #navbar li {
-    display:inline; /* places links horizontally */
+  display:inline; /* places links horizontally */
 }
 
 #navbar a {
-    color:#acbd95;
-    text-decoration: none;
-    font-size:18px;
-    padding-right:15px;
+  color:#acbd95;
+  text-decoration: none;
+  font-size:18px;
+  padding-right:15px;
 }
 
 #navbar a:hover {
-    color:darksalmon;
+  color:darksalmon;
 }
 
 #showcase {
-    /*
-    background-image:url('../images/showcase.jpg');
-    background-position:center right;
-    */
-    /*height:300px;*/
-    min-height:300px; /* use this instead so that the text doesnt overflow into below elements on window shrink */
-    margin-bottom:30px;
-    text-align:center;
+  /*
+  background-image:url('../images/showcase.jpg');
+  background-position:center right;
+  */
+  /*height:300px;*/
+  min-height:300px; /* use this instead so that the text doesnt overflow into below elements on window shrink */
+  margin-bottom:30px;
+  text-align:center;
 }
 
 #showcase h1 {
-    color:#6b6e70;
-    font-size:50px;
-    line-height:1.6em;
-    padding-top:30px;
+  color:#6b6e70;
+  font-size:50px;
+  line-height:1.6em;
+  padding-top:30px;
 }
 
 #main, .course {
-    float:left;
-    width:70%;
-    padding:0 30px;
-    box-sizing:border-box; /* takes into account the extra padding, border, margin? into the width */
+  float:left;
+  width:70%;
+  padding:0 30px;
+  box-sizing:border-box; /* takes into account the extra padding, border, margin? into the width */
 }
 
 .course h1 {
-    color:darksalmon;
+  color:darksalmon;
 }
 
 #sidebar, .tools {
-    float:right;
-    width:30%;
-    padding:10px;
-    background:#333;
-    color:#acbd95;
-    box-sizing:border-box; /* takes into account the extra padding, border, margin? into the width */
+  float:right;
+  width:30%;
+  padding:10px;
+  background:#333;
+  color:#acbd95;
+  box-sizing:border-box; /* takes into account the extra padding, border, margin? into the width */
 }
 
 /* reference: https://coolestguidesontheplanet.com/videodrome/youtube/ */
 .video-container {
-	position:relative;
-	padding-bottom:56.25%; /* 9/16 */
-	padding-top:30px;
-	height:0;
-	overflow:hidden;
+  position:relative;
+  padding-bottom:56.25%; /* 9/16 */
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
 }
 
 .video-container iframe, .video-container object, .video-container embed {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
 
-
-
 @media(max-width:600px) { /* media query to make the elements more responsive, they will pop down if window gets too small */
-    /* makes it so these styles will only be effective if under 600px */
-    #main, .course {
-        width:100%;
-        float:none;
-    }
+  /* makes it so these styles will only be effective if under 600px */
+  #main, .course {
+    width:100%;
+    float:none;
+  }
 
-    #sidebar, .tools {
-        width:100%;
-        float:none;
-    }
-
+  #sidebar, .tools {
+    width:100%;
+    float:none;
+  }
 }
