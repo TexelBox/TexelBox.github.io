@@ -108,6 +108,7 @@ a:hover {
 
 #sidebar, .tools {
   background:#333;
+  border-radius:20px;
   /* takes into account the extra padding, border, margin? into the width */
   box-sizing:border-box;
   color:#fff;
