@@ -1,5 +1,6 @@
 /* main.css */
 /* applies globally to all pages */
+/* some naming conventions will be mimicking Bootstrap */
 
 body {
   background-color:#222;
@@ -146,4 +147,36 @@ a:hover {
     float:none;
     width:100%;
   }
+}
+
+
+
+/* ===LAYOUT=== */
+
+
+
+/* ===CONTENT=== */
+
+
+
+/* ===COMPONENTS=== */
+
+
+
+/* ===UTILITIES=== */
+
+/* =BORDERS= */
+
+.border {
+  border-color: #000;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.border-white {
+  border-color: #fff;
+}
+
+.rounded-circle {
+  border-radius: 50%;
 }
