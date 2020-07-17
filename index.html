@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>TexelBox - GameDev, Programming, Graphics, more...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TexelBox - Home</title>
 
-    <meta name="description" content="Personal Website - GameDev, Programming, Graphics, more..." />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Aaron Hornby" />
+    <meta name="description" content="Personal website/portfolio - game development, computer graphics, programming, etc.">
+    <meta name="keywords" content="">
+    <meta name="author" content="Aaron Hornby">
 
     <!-- source: https://realfavicongenerator.net/ -->
     <!--- NOTE: I generated the favicons by using the basic-logo-optimized.svg -->
@@ -25,112 +25,93 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   </head>
   <body>
-    <header id="main-header">
-      <div class="container">
-        <img src="assets/images/exports/basic-logo-optimized.svg" alt="logo">
-        <h1>TEXELBOX - HOME</h1>
-      </div>
-    </header>
-
-    <nav id="navbar">
-      <div class="container">
-        <ul class="page-links">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="education.html">EDUCATION</a></li>
-          <li><a href="projects.html">PROJECTS</a></li>
-          <li>
-            <a class="github-link" href="https://github.com/TexelBox" target="_blank">
-              <i class="fab fa-github"> GitHub</i>
-            </a>
-          </li>
-          <li>
-            <a class="youtube-link" href="https://www.youtube.com/channel/UCtQGTnyVPesP8_LA9KfLKDQ" target="_blank">
-              <i class="fab fa-youtube"> YouTube</i>
-            </a>
-          </li>
-          <li>
-            <a class="twitter-link" href="https://twitter.com/TexelBox" target="_blank">
-              <i class="fab fa-twitter"> Twitter</i>
-            </a>
-          </li>
-          <li>
-            <a class="linkedin-link" href="https://www.linkedin.com/in/aaron-hornby-967b111aa" target="_blank">
-              <i class="fab fa-linkedin"> LinkedIn</i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <br />
-    <section id="showcase">
-      <div class="container">
-        <img class="border rounded-circle" src="assets/images/headshot-512x512.jpg" alt="headshot of Aaron Hornby" width="256px" />
-      </div>
-    </section>
-
-    <div class="container">
-      <section id="main">
-        <h1>Welcome</h1>
-        <p>
-          Hi, my name is Aaron Hornby.
-          I'm a recent graduate from the University of Calgary with a B.Sc. in Computer Science.
-          I also earned concentrations in "Computer Game Development" and "Computer Graphics".
-          My main interests are in game development and developing desktop graphics applications using C++/OpenGL, but I'm always curious about learning about any modern tech stack.
-          I'm currently in the process of finishing up several large projects: GitHub template repositories for C++ and OpenGL that allow for easier entry for developers and Farmyard Fling - a Unity2D Android vertical platformer.
-          I also desire to keep improving my developed products through several pillars of usability: minimalism, intuition, accessibility, and performance.
-        </p>
-      </section>
-      <aside id="sidebar">
-        <h3>Recommended Technologies</h3>
-        <ul>
-          <li>General:
+    <div class="grid grid-c1">
+      <header id="site-header">
+        <h1><img src="assets/images/exports/basic-logo-optimized.svg" alt="TexelBox logo"> TEXELBOX - HOME</h1>
+      </header>
+      <nav id="site-nav">
+        <input id="hidden-toggle" type="checkbox">
+        <label for="hidden-toggle"></label>
+        <menu>
+          <a href="">HOME</a></li>
+          <a href="education.html">EDUCATION</a></li>
+          <a href="projects.html">PROJECTS</a></li>
+          <a href="https://github.com/TexelBox" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.youtube.com/channel/UCtQGTnyVPesP8_LA9KfLKDQ" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://twitter.com/TexelBox" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/aaron-hornby-967b111aa" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </menu>
+      </nav>
+      <main id="site-main">
+        <img id="headshot" src="assets/images/headshot-512x512.jpg" alt="headshot of Aaron Hornby">
+        <div class="panel">
+          <section>
+            <h1 class="text-center">Welcome</h1>
+            <p>
+              Hi, my name is Aaron Hornby.
+              I'm a recent graduate from the University of Calgary with a B.Sc. in Computer Science.
+              I also earned concentrations in "Computer Game Development" and "Computer Graphics".
+              My main interests are in game development and developing desktop graphics applications using C++/OpenGL, but I'm always curious about learning about any modern tech stack.
+              I'm currently in the process of finishing up several large projects: GitHub template repositories for C++ and OpenGL that allow for easier entry for developers and Farmyard Fling - a Unity2D Android vertical platformer.
+              I also desire to keep improving my developed products through several pillars of usability: minimalism, intuition, accessibility, and performance.
+            </p>
+            <h2 class="text-center">Contact</h2>
+            <p>
+              If you want to contact me with any professional inquiry, please reach out via LinkedIn.
+              My resume, email address, and phone number should be publicly available there.
+              This requirement is to hopefully reduce the amount of spam I receive.
+              If you want to discuss anything related to one of my projects or wish to share something cool you've built, please feel free to send me a DM on Twitter.
+              Thank you!
+            </p>
+          </section>
+          <aside>
+            <h3 class="text-center">Recommended Tech</h3>
             <ul>
-              <li>Windows 10 / WSL Ubuntu 18.04+ + VcXsrv (platform)</li>
-              <li>Hyper (terminal) + Git Bash / WSL Bash (shell)</li>
-              <li>Git (version-control system)</li>
-              <li>GitHub (repository host)</li>
-              <li>C++ (primary language)</li>
-              <li>CMake (build-system generator)</li>
-              <li>Visual Studio 2017+ (IDE)</li>
-              <li>Visual Studio Code / Vim (text editor)</li>
+              <li><h4>General:</h4>
+                <ul>
+                  <li>Windows 10 / WSL Ubuntu 18.04+ + VcXsrv (platform)</li>
+                  <li>Hyper (terminal) + Git Bash / WSL Bash (shell)</li>
+                  <li>Git (version-control system)</li>
+                  <li>GitHub (repository host)</li>
+                  <li>C++ (primary language)</li>
+                  <li>CMake (build-system generator)</li>
+                  <li>Visual Studio 2017+ (IDE)</li>
+                  <li>Visual Studio Code / Vim (text editor)</li>
+                </ul>
+              </li>
+              <li><h4>Graphics:</h4>
+                <ul>
+                  <li>OpenGL 3.3+ Core + GLSL, GLFW, glad, GLM, stb, Dear ImGui (libraries)</li>
+                </ul>
+              </li>
+              <li><h4>Testing:</h4>
+                <ul>
+                  <li>doctest (library)</li>
+                  <li>AppVeyor + Travis CI (continuous integration)</li>
+                </ul>
+              </li>
+              <li><h4>GameDev/Media:</h4>
+                <ul>
+                  <li>Unity (game engine)</li>
+                  <li>Blender (modeling, rigging, animation)</li>
+                  <li>Inkscape (vector art)</li>
+                  <li>Audacity (audio editing)</li>
+                  <li>OBS Studio (screen recording)</li>
+                  <li>OpenShot Video Editor (video editing)</li>
+                  <li>FFmpeg (media conversion)</li>
+                </ul>
+              </li>
             </ul>
-          </li>
-          <li>Graphics:
-            <ul>
-              <li>OpenGL 3.3+ Core + GLSL, GLFW, glad, GLM, stb, Dear ImGui (libraries)</li>
-            </ul>
-          </li>
-          <li>Testing:
-            <ul>
-              <li>doctest (library)</li>
-              <li>AppVeyor + Travis CI (continuous integration)</li>
-            </ul>
-          </li>
-          <li>GameDev/Media:
-            <ul>
-              <li>Unity (game engine)</li>
-              <li>Blender (modeling, rigging, animation)</li>
-              <li>Inkscape (vector art)</li>
-              <li>Audacity (audio editing)</li>
-              <li>OBS Studio (screen recording)</li>
-              <li>OpenShot Video Editor (video editing)</li>
-              <li>FFmpeg (media conversion)</li>
-            </ul>
-          </li>
-        </ul>
-      </aside>
+          </aside>
+        </div>
+      </main>
+      <footer id="site-footer">
+        <h6><em>Copyright &copy; 2019 - 2020, Aaron Hornby</em></h6>
+      </footer>
     </div>
-
-    <footer id="main-footer">
-      <p>
-        <em>Copyright &copy; 2019-2020, Aaron Hornby</em>
-      </p>
-    </footer>
   </body>
 </html>

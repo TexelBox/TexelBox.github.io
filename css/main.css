@@ -1,157 +1,308 @@
 /* main.css */
 /* applies globally to all pages */
 /* some naming conventions will be mimicking Bootstrap */
+/* some parts follow The Net Ninja's "Mobile-First Responsive Build" tutorial (on YouTube) */
+
+/* fonts */
+
+@font-face {
+  font-family: 'Abel Regular';
+  src: url('/assets/fonts/Abel/Abel-Regular.ttf');
+}
+
+
+
+/* variables */
+
+:root {
+  --background-color-1: #222;
+  --background-color-2: #181818;
+  --background-color-3: #282828;
+  --color-1: #ddd;
+  --color-2: #aaa;
+}
+
+
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* base styles */
+
+html {
+  font-size: 16px;
+}
 
 body {
-  background-color:#222;
-  color:#ddd;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size:16px;
-  line-height:1.6em;
-  margin:0;
+  background-color: var(--background-color-1);
+  color: var(--color-1);
+  font-family: 'Abel Regular';
+  font-size: 1.0rem;
+  font-weight: normal;
+  line-height: 1.6em;
+  text-align: left;
 }
 
 a {
-  color:#fff;
+  color: #fff;
 }
 
+a[href=""],
 a:hover {
-  color:#aaa;
+  color: var(--color-2);
 }
 
-.container {
-  margin:auto;
-  overflow:hidden;
-  width:80%;
+/* reference: https://www.w3.org/TR/2017/REC-html52-20171214/rendering.html#sections-and-headings */
+h1 {
+  font-size: 2.0em;
+  margin-block-end: 0.67em;
+  margin-block-start: 0.67em;
 }
 
-#main-footer {
-  background-color:#000;
-  color:#fff;
-  margin-top:100px;
-  padding:20px;
-  text-align:center;
+h2 {
+  font-size: 1.5em;
+  margin-block-end: 0.83em;
+  margin-block-start: 0.83em;
 }
 
-#main-header {
-  background-color:#fff;
-  color:#000;
-  text-align:center;
+h3 {
+  font-size: 1.17em;
+  margin-block-end: 1.0em;
+  margin-block-start: 1.0em;
 }
 
-#main-header .container img {
-  float:left;
-  height:64px;
-  width:10%;
+h4 {
+  font-size: 1.0em;
+  margin-block-end: 1.33em;
+  margin-block-start: 1.33em;
 }
 
-#main-header .container h1 {
-  float:right;
-  width:90%;
+h5 {
+  font-size: 0.83em;
+  margin-block-end: 1.67em;
+  margin-block-start: 1.67em;
 }
 
-#navbar {
-  background-color:#000;
-  color:#fff;
+h6 {
+  font-size: 0.67em;
+  margin-block-end: 2.33em;
+  margin-block-start: 2.33em;
 }
 
-#navbar ul {
-  /* removes bullet points */
-  list-style: none;
-  padding:0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-weight: bold;
 }
 
-#navbar li {
-  /* places links horizontally */
-  display:inline;
+hr {
+  margin-block-end: 0.5em;
+  margin-block-start: 0.5em;
+  margin-inline-end: auto;
+  margin-inline-start: auto;
 }
 
-#navbar a {
-  color:#fff;
-  font-size:18px;
-  padding-right:15px;
+ol {
+  margin-block-end: 1.0em;
+  margin-block-start: 1.0em;
+  padding-inline-start: 2.0em;
+}
+
+ul {
+  margin-block-end: 1.0em;
+  margin-block-start: 1.0em;
+  padding-inline-start: 2.0em;
+}
+
+
+
+/* mobile styles */
+
+/* COMMON TO ALL PAGES */
+
+#site-header {
+  background-color: #fff;
+  color: #000;
+  padding: 1.0em;
+  text-align: center;
+}
+#site-header > h1 {
+  border-bottom: 0.1em solid #000;
+  color: #000;
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 0.1em;
+}
+#site-header > h1 > img {
+  width: 2.0em;
+}
+
+/* reference: https://www.youtube.com/watch?v=xMTs8tAapnQ */
+#site-nav {
+  background-color: #000;
+  box-shadow: 0 1px 5px #000;
+  color: #fff;
+  font-size: 1.25em;
+  padding: 0.5em;
+}
+#hidden-toggle {
+  display: none;
+}
+#site-nav > label {
+  cursor: pointer;
+  display: block;
+  text-align: right;
+}
+#site-nav > label::before {
+  /* "trigram for heaven" symbol (3 horizontal bars / hamburger) */
+  content: "\2630";
+}
+#site-nav > label:hover {
+  color: var(--color-2);
+}
+#hidden-toggle:checked + label::before {
+  /* "multiplication x" symbol (close) */
+  content: "\2715";
+}
+#site-nav > menu {
+  display: none;
+  text-align: center;
+}
+#hidden-toggle:checked ~ menu {
+  display: block;
+}
+#site-nav > menu > a {
+  border-bottom: 1px solid #fff;
+  display: block;
+  margin: 0.2em 0 0 0;
+  padding: 0 0 0.2em 0;
   text-decoration: none;
 }
 
-#navbar a:hover {
-  color:#aaa;
+#site-main {
+  margin: 2.0em auto;
 }
 
-#showcase {
-  margin-bottom:30px;
-  /* use this instead so that the text doesnt overflow into below elements on window shrink */
-  min-height:300px;
-  text-align:center;
+#site-footer {
+  background-color: #000;
+  box-shadow: 0 -1px 5px #000;
+  color: #fff;
+  padding: 1.0em;
+  text-align: center;
+}
+#site-footer > h6 {
+  border-top: 0.1em dotted #fff;
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  padding-top: 0.1em;
 }
 
-#showcase h1 {
-  color:#777;
-  font-size:50px;
-  line-height:1.6em;
-  padding-top:30px;
+/* SPECIFICS */
+
+#headshot {
+  border: 1px solid #000;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #000;
+  display: block;
+  margin: 1.0em auto;
+  width: 10.0em;
 }
 
-#main, .course {
-  /* takes into account the extra padding, border, margin? into the width */
-  box-sizing:border-box;
-  float:left;
-  padding:0px 30px;
-  width:70%;
+.panel {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr;
+}
+.panel > section {
+  background-color: var(--background-color-2);
+  box-shadow: 1px 1px 5px #000;
+  padding: 1.0em;
+}
+.panel > aside {
+  background-color: var(--background-color-3);
+  box-shadow: 1px 1px 5px #000;
+  padding: 1.0em;
 }
 
-.container .term h1 {
-  color:#fff;
-}
-
-.container .term .course h1 {
-  color:#fff;
-}
-
-#sidebar, .tools {
-  background:#333;
-  border-radius:20px;
-  /* takes into account the extra padding, border, margin? into the width */
-  box-sizing:border-box;
-  color:#fff;
-  float:right;
-  padding:10px;
-  width:30%;
-}
-
-/* reference: https://coolestguidesontheplanet.com/videodrome/youtube/ */
-.video-container {
-  height:0;
-  overflow:hidden;
-  padding-bottom:56.25%; /* 9/16 */
-  padding-top:30px;
-  position:relative;
-}
-
-.video-container embed, .video-container iframe, .video-container object {
-  height:100%;
-  left:0;
-  position:absolute;
-  top:0;
-  width:100%;
-}
-
-/* media query to make the elements more responsive, they will pop down if window gets too small */
-/* makes it so these styles will only be effective if under 600px */
-@media(max-width:600px) {
-  #main, .course {
-    float:none;
-    width:100%;
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+  #site-nav > label {
+    display: none;
   }
-
-  #sidebar, .tools {
-    float:none;
-    width:100%;
+  #site-nav > menu {
+    display: block;
+    text-align: right;
+  }
+  #site-nav > menu > a {
+    border-bottom: 0;
+    border-right: 1px solid #fff;
+    display: inline;
+    margin: 0 0 0 0.2em;
+    padding: 0 0.2em 0 0;
   }
 }
 
+/* large tablets & laptop styles */
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 1.125rem;
+  }
 
+  #site-main {
+    width: 70%;
+  }
+
+  .panel {
+    grid-template-columns: 2fr 1fr;
+  }
+  .panel > section {
+    border-radius: 1%;
+  }
+  .panel > aside {
+    border-radius: 1%;
+  }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 1.25rem;
+  }
+}
+
+
+
+/* =====REUSABLE===== */
 
 /* ===LAYOUT=== */
+
+/* =GRID= */
+
+.grid {
+  display: grid;
+}
+
+.grid-c1 {
+  grid-template-columns: 1fr;
+}
+
+.grid-c2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gap-25px {
+  gap: 25px;
+}
 
 
 
@@ -168,9 +319,7 @@ a:hover {
 /* =BORDERS= */
 
 .border {
-  border-color: #000;
-  border-style: solid;
-  border-width: 1px;
+  border: 1px solid #000;
 }
 
 .border-white {
@@ -179,4 +328,49 @@ a:hover {
 
 .rounded-circle {
   border-radius: 50%;
+}
+
+/* =SIZING= */
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* =SPACING= */
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =TEXT= */
+
+.text-center {
+  text-align: center;
+}
+
+/* =VIDEO= */
+
+/* reference: https://www.ankursheel.com/blog/full-width-you-tube-video-embed */
+.video-container-16x9 {
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+}
+.video-container-16x9 > iframe {
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
