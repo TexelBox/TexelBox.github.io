@@ -129,6 +129,14 @@ ul {
 
 /* COMMON TO ALL PAGES */
 
+/* reference: https://stackoverflow.com/questions/46158844/how-can-i-have-a-sticky-footer-with-my-css-grid-layout */
+#site-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto 1fr;
+  min-height: 100vh;
+}
+
 #site-header {
   background-color: #fff;
   color: #000;
@@ -193,6 +201,8 @@ ul {
 }
 
 #site-footer {
+  /* align footer to bottom of site-page */
+  align-self: end;
   background-color: #000;
   box-shadow: 0 -1px 5px #000;
   color: #fff;
