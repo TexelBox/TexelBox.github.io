@@ -379,6 +379,10 @@ ul {
   text-align: center;
 }
 
+.text-decoration-none {
+  text-decoration: none;
+}
+
 /* =VIDEO= */
 
 /* reference: https://www.ankursheel.com/blog/full-width-you-tube-video-embed */
