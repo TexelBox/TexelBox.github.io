@@ -310,6 +310,10 @@ ul {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.gap-10px {
+  gap: 10px;
+}
+
 .gap-25px {
   gap: 25px;
 }
@@ -359,6 +363,10 @@ ul {
 }
 
 /* =SPACING= */
+
+.m-auto {
+  margin: auto;
+}
 
 .mx-auto {
   margin-left: auto;
